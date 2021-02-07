@@ -31,6 +31,8 @@ class Add_Bookmakers(unittest.TestCase):
         bonusCompar = driver.find_element_by_xpath(
             '/html/body/div/div/main/div[3]/div[1]/div[4]/a').click()
 
+        # check the expected result
+
         if driver.find_elements_by_xpath("//*[@id='MainContent']/div[2]/div[1]/div[1]/div[2]/div").__contains__('Betway'):
 
             print(

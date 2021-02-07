@@ -28,6 +28,8 @@ class Bookmakers_Full_Review(unittest.TestCase):
         driver.back()
         time.sleep(3)
 
+        # check the expected result
+
         if driver.find_elements_by_xpath("//*[@id='MainContent']/div[2]/div[1]/div[1]/div[1]"):
 
             print('The user should return to the page with the  open comparison section ')

@@ -27,6 +27,8 @@ class List_Section(unittest.TestCase):
 
         driver.refresh()
 
+        # check the expected result
+
         if driver.find_elements_by_xpath("//*[@id='MainContent']/div[2]/div[1]/div[3]").__contains__('Score'):
 
             print('The user should return to the page with the  open  list section ')
